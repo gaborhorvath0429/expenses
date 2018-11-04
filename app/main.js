@@ -17,7 +17,9 @@ store.subscribe((mutations, state) => {
   appSettings.setString("store", JSON.stringify(state));
 });
 
+store.dispatch('expenses/getAll');
+
 new Vue({
   store,
-  render: h => h('frame', [store.state.auth.user ? h(App) : h(Login)])
+  render: h => h('frame', [h(App)])
 }).$start()

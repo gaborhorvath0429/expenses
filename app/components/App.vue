@@ -22,26 +22,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
-const appSettings = require("tns-core-modules/application-settings");
 import NewSpending from '@/components/Tabs/NewSpending'
 
   export default {
     components: {
         NewSpending
-    },
-    data() {
-        return {
-
-        }
-    },
-    computed: {
-        ...mapState('auth', [
-            'user'
-        ]),
-    },
-    mounted() {
-    },
+    }
 }
 </script>
 
