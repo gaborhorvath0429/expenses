@@ -23,6 +23,7 @@
     "nativescript-vue": "^2.0.0",
     "nativescript-vue-devtools": "^1.1.0",
     "tns-core-modules": "^4.2.0",
+    "vue-moment": "^4.0.0",
     "vue-router": "^3.0.1",
     "vuex": "2.3.1"
   },

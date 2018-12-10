@@ -4,18 +4,11 @@
                  android:tabTextColor="#e1a3ff"
                  android:selectedTabTextColor="#ffffff"
                  androidSelectedTabHighlightColor="#ffffff">
-            <TabViewItem title="Kiadás">
+            <TabViewItem title="Rögzítés">
                 <NewSpending/>
             </TabViewItem>
-            <TabViewItem title="Bevétel">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" text="Tab 2 Content" col="0" row="0"/>
-                </GridLayout>
-            </TabViewItem>
-            <TabViewItem title="Statisztika">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" text="Tab 3 Content" col="0" row="0"/>
-                </GridLayout>
+            <TabViewItem title="Tételek">
+                <Statistics/>
             </TabViewItem>
         </TabView>
     </Page>
@@ -23,10 +16,12 @@
 
 <script>
 import NewSpending from '@/components/Tabs/NewSpending'
+import Statistics from '@/components/Tabs/Statistics'
 
   export default {
     components: {
-        NewSpending
+        NewSpending,
+        Statistics
     }
 }
 </script>

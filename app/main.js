@@ -4,7 +4,7 @@ import Login from './components/Auth/Login'
 import store from './store'
 import VueDevtools from 'nativescript-vue-devtools'
 const appSettings = require("tns-core-modules/application-settings");
-//appSettings.remove("store");
+Vue.use(require('vue-moment'));
 if(TNS_ENV !== 'production') {
   Vue.use(VueDevtools)
 }

@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
 import NewSpending from './Tabs/NewSpending';
 import App from './App';
 import * as Toast from 'nativescript-toast';
@@ -18,12 +17,6 @@ import * as Toast from 'nativescript-toast';
             return {
                 amount: '',
             }
-        },
-
-        computed: {
-            ...mapState('expenses', [
-                'expenses'
-            ])
         },
 
         props: ['category'],
