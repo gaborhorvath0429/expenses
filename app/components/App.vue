@@ -8,6 +8,9 @@
                 <NewSpending/>
             </TabViewItem>
             <TabViewItem title="Tételek">
+                <Items/>
+            </TabViewItem>
+            <TabViewItem title="Statisztika">
                 <Statistics/>
             </TabViewItem>
         </TabView>
@@ -16,11 +19,13 @@
 
 <script>
 import NewSpending from '@/components/Tabs/NewSpending'
+import Items from '@/components/Tabs/Items'
 import Statistics from '@/components/Tabs/Statistics'
 
   export default {
     components: {
         NewSpending,
+        Items,
         Statistics
     }
 }

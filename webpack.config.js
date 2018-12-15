@@ -210,7 +210,7 @@ module.exports = env => {
                 "global.TNS_WEBPACK": "true",
                 "TNS_ENV": JSON.stringify(mode),
                 'process.env': {
-                    'API_URL': JSON.stringify('http://10.0.2.2:3000')//https://lit-everglades-97770.herokuapp.com  //http://10.0.2.2:3000
+                    'API_URL': JSON.stringify('https://lit-everglades-97770.herokuapp.com')//https://lit-everglades-97770.herokuapp.com  //http://10.0.2.2:3000
                 }
             }),
             // Remove all files from the out dir.

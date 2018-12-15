@@ -20,17 +20,7 @@ const modules = requireContext.keys()
   }, {})
 
 var store = new Vuex.Store({
-  modules,
-
-  mutations: {
-      load(state) {
-        if(appSettings.getString("store")) {
-            store.replaceState(
-                Object.assign(state, JSON.parse(appSettings.getString("store")))
-            );
-        }
-    },
-  }
+  modules
 })
 
 export default store;

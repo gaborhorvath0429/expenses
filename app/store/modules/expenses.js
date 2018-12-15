@@ -3,7 +3,13 @@ import Vue from 'nativescript-vue'
 
 export const state = {
   expenses: [],
+  statistics: []
 };
+
+export const getters = {
+  expenses: state => state.expenses,
+  statistics: state => state.statistics
+}
 
 export const mutations = {
   set(state, expenses) {
